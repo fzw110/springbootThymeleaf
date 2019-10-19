@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:text-aline="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>edit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <form action="update" method="post" style="width:500px;margin:200px auto;text-align: center">
+      姓名: <input name="name" th:value="${self.getName()}"><br/>
+      年龄: <input name="age" th:value="${self.getAge()}"><br/>
+      地址: <input name="adress" th:value="${self.getAdress()}"><br/>
+       <input  name="id" th:value="${self.getId()}" type="hidden">
+      <button type="submit">提交</button>
+
+  </form>
+
+</body>
+</html>
